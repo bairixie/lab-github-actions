@@ -1,4 +1,4 @@
-name: CI Build
+ name: CI Build
 on:
   push:
     branches:
@@ -36,7 +36,6 @@ jobs:
           poetry config virtualenvs.create false
           poetry lock
           poetry install
-          poetry lock
 
       - name: Linting
         run: |
