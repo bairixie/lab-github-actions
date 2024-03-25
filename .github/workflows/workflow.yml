@@ -36,6 +36,7 @@ jobs:
           poetry config virtualenvs.create false
           poetry lock
           poetry install
+          poetry lock
 
       - name: Linting
         run: |
